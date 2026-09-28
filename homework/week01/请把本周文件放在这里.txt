@@ -1,0 +1,14 @@
+第 1 周作业提交目录
+
+按 week01.md 任务卡的要求，把下面 8 个文件放在这个文件夹里：
+
+  day1_hello.py
+  day2_bmi.py
+  day3_scores.py
+  day4_grade.py
+  day5_dict.py
+  errors.md
+  week01_grade.py
+  week01_总结.md
+
+做完后跟 Codex 说：「第 1 周提交」

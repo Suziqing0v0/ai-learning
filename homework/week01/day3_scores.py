@@ -1,0 +1,9 @@
+scores=[85,92,78,90,66,88,95,73]
+a=sum(scores)/len(scores)
+b=max(scores)
+c=min(scores)
+d=sorted(scores)
+print(f"平均分：{round(a,1)}")
+print(f"最高分：{b}")
+print(f"最低分：{c}")
+print(f"排序后：{d}")

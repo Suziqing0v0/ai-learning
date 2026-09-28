@@ -1,0 +1,12 @@
+第 3 周作业提交目录
+
+按 week03.md 任务卡的要求：
+
+  day16_git.md        Git 操作记录
+  mystats.py          四个统计函数（Day 18 拆出来）
+  week02_main.py      主逻辑（Day 18 拆出来）
+  day19_class.py      Student 类练习
+
+另外第 17 天要把整个 ai-learning 推送到 GitHub。
+
+做完后跟 Codex 说：「第 3 周提交」

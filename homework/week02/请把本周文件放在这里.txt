@@ -1,0 +1,12 @@
+第 2 周作业提交目录
+
+按 week02.md 任务卡的要求，把本周文件放在这个文件夹里：
+
+  day8_stats.py
+  day9_write.py        + result.txt
+  day10_read.py        + data.txt
+  day11_report.py      + report.txt
+  day12_tricks.py
+  week02_stats.py
+
+做完后跟 Codex 说：「第 2 周提交」
