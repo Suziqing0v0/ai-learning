@@ -36,12 +36,8 @@ def get_stdev(n):
 
 try:
     n=read_number(data_path)
-
-
-
     s=max(n)
     t=min(n)
-
 
     result_path=os.path.join(folder,"result.txt")
     with open(result_path,"w",encoding="utf-8") as f:
