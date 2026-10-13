@@ -1,0 +1,12 @@
+第 4 周作业提交目录
+
+按 week04.md 任务卡的要求：
+
+  day21_numpy.py
+  day22_slice.py
+  day23_vectorize.py
+  day24_filter.py
+  day25_stats.py
+  week04_stats_numpy.py   + result_numpy.txt + week04_对比.md
+
+做完后跟 Codex 说：「第 4 周提交」

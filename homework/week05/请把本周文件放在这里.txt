@@ -1,0 +1,12 @@
+第 5 周作业提交目录
+
+按 week05.md 任务卡的要求：
+
+  day28_plot.py        + sin.png
+  day29_charts.py      + 三张图
+  day30_hist.py        + 直方图
+  day31_labels.py      + 标注完整的图
+  day32_subplots.py    + four.png
+  week05_plot.py       + 物理数据可视化.png
+
+做完后跟 Codex 说：「第 5 周提交」

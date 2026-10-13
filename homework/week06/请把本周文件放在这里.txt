@@ -1,0 +1,12 @@
+第 6 周作业提交目录
+
+按 week06.md 任务卡的要求：
+
+  day35_rect.py        矩形法
+  day36_trapz.py       梯形法
+  day37_simpson.py     辛普森法
+  day38_error.py       + error_plot.png
+  day39_order.py       收敛阶验证
+  week06_integrate.py  + week06_error.png + week06_报告.md
+
+做完后跟 Codex 说：「第 6 周提交」

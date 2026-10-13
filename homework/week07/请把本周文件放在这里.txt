@@ -1,0 +1,13 @@
+第 7 周作业提交目录
+
+按 week07.md 任务卡的要求：
+
+  day40_dataframe.py
+  day41_read.py
+  day42_select.py
+  day43_sort.py
+  day44_groupby.py
+  week07_analysis.py   + 数据文件 + week07_报告.md
+  requirements.txt     ← 本周新增的工程习惯
+
+做完后跟 Codex 说：「第 7 周提交」
