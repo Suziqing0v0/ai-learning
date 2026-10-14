@@ -310,8 +310,10 @@ README 改一行，五分钟的事。所以以后再想到更好的，随时改�
 **怎么设**：桌面上已经有一个现成的脚本，这样运行：
 
 ```
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\Desktop\set-openai-key.ps1"
+powershell -ExecutionPolicy Bypass -File "C:\Users\15503\Desktop\opencode\set-openai-key.ps1"
 ```
+
+> 注意路径：脚本在 **`Desktop\opencode\`** 里面，不在桌面上。
 
 它会提示你粘贴 Key（**输入不回显**），然后写进用户级环境变量
 `OPENAI_API_KEY`。**要新开一个终端窗口**才会生效。
