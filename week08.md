@@ -250,19 +250,24 @@ demo.pptx  ← 双击能打开
 而是自己一个仓库、自己一个目录：
 
 ```
-C:\Users\15503\Desktop\opencode\<你起的名字>\                       ← 项目本体（独立仓库）
+D:\ai-learning\super-ppt\                                          ← 项目本体（独立仓库）
 C:\Users\15503\Desktop\opencode\ai-learning\homework\week08\        ← 本周作业（Day 47/48 + 报告）
+
+项目放 D 盘不是因为"文档该搬家"，而是因为**它会自己长大**：以后生成的 pptx、
+模板、将来的模型缓存都会堆在这里。`D:\ai-learning\` 这个目录就是计划里留给
+"数据集和大项目"的地方（见 README 的「磁盘铁律」）。
 ```
 
-### 第一件事：起名字
+### 第一件事：名字（已定 2026-10-14）
 
-**名字你起，我不代劳。** 起好告诉我，我记进 `progress.md`。
+**Super PPT** —— 目录名和 GitHub 仓库名都用 `super-ppt`
+（小写加连字符，这是仓库名的通行写法；显示给人看的时候写 "Super PPT"）。
 
-起名的三个参考（不是要求）：
+顺便记一下为什么仓库名不能直接照抄显示名：仓库名以后会变成网址
+（`github.com/Suziqing0v0/super-ppt`），网址里出现大写和空格都别扭。
 
-- 别人听一遍能不能记住
-- 能不能一眼看出是干什么的
-- 以后要做成网页、要发出去，这个名字撑不撑得住
+**名字是可以改的**——改起来就是重命名文件夹、GitHub 仓库设置里改一下、
+README 改一行，五分钟的事。所以以后再想到更好的，随时改，别有负担。
 
 ---
 
@@ -270,7 +275,8 @@ C:\Users\15503\Desktop\opencode\ai-learning\homework\week08\        ← 本周�
 
 **今天要做的四件事**
 
-1. 建目录、`git init`、在 GitHub 上建一个空仓库并关联（第 3 周做过，翻你自己的笔记）
+1. 建目录 `D:\ai-learning\super-ppt\`、`git init`、在 GitHub 上建一个叫 `super-ppt` 的
+   空仓库并关联（第 3 周做过，翻你自己的笔记）
 2. 装两个依赖：`pip install openai python-pptx`
    （`python-pptx` 是"用 Python 造 pptx 文件"的库，纯 Python，装完就能用）
 3. **把 API Key 放进环境变量**（下面单独讲，这是今天最重要的一步）
@@ -703,7 +709,7 @@ print(sys.argv)
 - `day48_sampling.py` + 图
 - `week08_报告.md`
 
-**项目本体单独一个仓库（名字你起）：**
+**项目本体 `D:\ai-learning\super-ppt\`（独立仓库）：**
 
 - `hello_llm.py` · `outline.py` · `ppt.py` · 主程序
 - `README.md` · `requirements.txt` · `.gitignore`
