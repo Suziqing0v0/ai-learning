@@ -310,18 +310,22 @@ README 改一行，五分钟的事。所以以后再想到更好的，随时改�
 **怎么设**：桌面上已经有一个现成的脚本，这样运行：
 
 ```
-powershell -ExecutionPolicy Bypass -File "C:\Users\15503\Desktop\opencode\set-openai-key.ps1"
+powershell -ExecutionPolicy Bypass -File "C:\Users\15503\Desktop\opencode\set-openai-key.ps1" -Name DEEPSEEK_API_KEY
 ```
 
 > 注意路径：脚本在 **`Desktop\opencode\`** 里面，不在桌面上。
 
 它会提示你粘贴 Key（**输入不回显**），然后写进用户级环境变量
-`OPENAI_API_KEY`。**要新开一个终端窗口**才会生效。
+`DEEPSEEK_API_KEY`。**要新开一个终端窗口**才会生效。
+
+> **2026-10-15 改名**：原来叫 `OPENAI_API_KEY`，因为和这台机器上的 CC Switch 撞名，改成了
+> `DEEPSEEK_API_KEY`。根子是 `OPENAI_API_KEY` 是个**"公共名字"**——任何兼容 OpenAI 接口的工具
+> 都会读它，容易拿错 key 去请求错的服务。**以后设 key，都用带服务商名字的名字。**
 
 **怎么确认设好了**（这行只输出变量名，不输出值）：
 
 ```
-[Environment]::GetEnvironmentVariables('User').Keys -like 'OPENAI*'
+[Environment]::GetEnvironmentVariables('User').Keys -like 'DEEPSEEK*'
 ```
 
 #### 第一次调用
@@ -331,7 +335,7 @@ import os
 from openai import OpenAI
 
 client = OpenAI(
-    api_key=os.environ["OPENAI_API_KEY"],
+    api_key=os.environ["DEEPSEEK_API_KEY"],
     base_url="https://api.deepseek.com",
 )
 
@@ -365,7 +369,7 @@ print(response.choices[0].message.content)
 因为**模型可以一次给你好几个候选答案**（比如你让它写 3 个标题），
 所以它用列表装着。`[0]` = 取第一个。一层层剥进去，最后拿到那句话。
 
-> **注意**：`os.environ["OPENAI_API_KEY"]` 用的是**方括号**，
+> **注意**：`os.environ["DEEPSEEK_API_KEY"]` 用的是**方括号**，
 > 而且名字要**大写、一模一样**。打错一个字母就是 `KeyError`（第 1 周学的）。
 > 名字不存在时报错信息挺吓人的，这次先记住一条：**报错了先看名字拼写**。
 
