@@ -53,7 +53,7 @@ plt.show()
 Matplotlib 默认字体**不支持中文**，标题写成中文会显示成一串方框。开头加这两行就好：
 
 ```python
-plt.rcParams['font.sans-serif'] = ['SimHei']    # 用黑体显示中文
+plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']    # 用微软雅黑（原写的 SimHei 缺负号，2026-10 修订）
 plt.rcParams['axes.unicode_minus'] = False      # 让负号正常显示
 ```
 
