@@ -13,3 +13,6 @@ tmp/
 
 # 助手诊断时生成的临时图（不是作业产物）
 homework/**/_*.png
+
+# 第 17 周生成的本地微调模型（体积大，可由脚本重新训练）
+homework/week17/tiny_sentiment/
