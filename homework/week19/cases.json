@@ -1,0 +1,52 @@
+[
+  {
+    "id": "case-001-newton",
+    "mode": "topic",
+    "topic": "给大一学生讲牛顿第二定律",
+    "doc": null,
+    "risk": "核心公式、净力和单位缺失",
+    "expected": {
+      "must_cover": ["牛顿第二定律", "力", "质量", "加速度", "单位"],
+      "must_not_claim": ["速度越大，合力一定越大"],
+      "max_points_per_page": 4,
+      "max_chars_per_point": 80
+    }
+  },
+  {
+    "id": "case-002-attention",
+    "mode": "topic",
+    "topic": "给研究生讲 Scaled Dot-Product Attention",
+    "doc": null,
+    "risk": "要点过多或深度不足",
+    "expected": {
+      "must_cover": ["Query", "Key", "Value", "缩放", "softmax", "加权求和"],
+      "must_not_claim": ["注意力权重不需要归一化"],
+      "max_points_per_page": 4,
+      "max_chars_per_point": 80
+    }
+  },
+  {
+    "id": "case-003-rag-thermo",
+    "mode": "rag",
+    "topic": "热力学第二定律",
+    "doc": "homework/week18/source.md",
+    "risk": "引用资料外内容或来源缺失",
+    "expected": {
+      "must_cover": ["孤立系统", "熵", "卡诺效率", "统计性质"],
+      "must_not_claim": ["第二定律要求所有局部系统持续变混乱"],
+      "max_points_per_page": 4,
+      "max_chars_per_point": 80
+    }
+  },
+  {
+    "id": "case-004-no-answer",
+    "mode": "rag",
+    "topic": "今天食堂的午饭是什么？",
+    "doc": "homework/week18/source.md",
+    "risk": "资料不足时仍然编造",
+    "expected": {
+      "should_stop": true,
+      "reason": "文档与食堂午饭无关"
+    }
+  }
+]
