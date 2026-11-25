@@ -16,3 +16,6 @@ homework/**/_*.png
 
 # 第 17 周生成的本地微调模型（体积大，可由脚本重新训练）
 homework/week17/tiny_sentiment/
+
+# 第 18 周由 source.md 自动生成的检索中间产物
+homework/week18/chunks.json
