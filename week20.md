@@ -121,8 +121,8 @@ eval 路径
 | Day 100 输入界面 | 通过 |
 | Day 101 生成核心重构 | 通过，CLI 回归成功 |
 | Day 102 Streamlit 接入 | 通过，真实网页生成 `score=100` |
-| Day 103 本地启动与作品集 | 完成 |
-| Streamlit Community Cloud | **等待用户登录部署** |
+| Day 103 部署与作品集 | 通过 |
+| Streamlit Community Cloud | 已上线 |
 
 本地页面已验证：
 
@@ -133,4 +133,7 @@ eval 路径
 - 提供 PPT、大纲和评测三个下载按钮；
 - 本地服务返回 HTTP 200。
 
-公网链接尚不存在，因此本周不能标记为完整通过。
+**公网应用**：
+https://super-ppt-kpcvhtoahtitynwunugtvw.streamlit.app/
+
+用户已在浏览器中完成打开、生成和下载验证，第 20 周通过。
